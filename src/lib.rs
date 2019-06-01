@@ -62,6 +62,8 @@ extern crate alloc;
 extern crate rand;
 #[cfg(test)]
 extern crate simple_logger;
+#[cfg(test)]
+extern crate rand_xorshift;
 
 mod action;
 mod adler32;

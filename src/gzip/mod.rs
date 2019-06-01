@@ -16,8 +16,9 @@ mod tests {
     use alloc::vec::Vec;
     use gzip::decoder::GZipDecoder;
     use gzip::encoder::GZipEncoder;
-    use rand::{Rng, SeedableRng, XorShiftRng};
+    use rand::{Rng, SeedableRng};
     use rand::distributions::Standard;
+    use rand_xorshift::XorShiftRng;
     use traits::decoder::DecodeExt;
     use traits::encoder::EncodeExt;
 

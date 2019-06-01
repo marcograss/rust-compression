@@ -14,8 +14,9 @@ mod tests {
     use action::Action;
     #[cfg(not(feature = "std"))]
     use alloc::vec::Vec;
-    use rand::{Rng, SeedableRng, XorShiftRng};
+    use rand::{Rng, SeedableRng};
     use rand::distributions::Standard;
+    use rand_xorshift::XorShiftRng;
     use traits::decoder::DecodeExt;
     use traits::encoder::EncodeExt;
     use zlib::decoder::ZlibDecoder;
